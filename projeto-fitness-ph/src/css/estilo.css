@@ -1,0 +1,321 @@
+/********* FONTES *********/
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../fonts/OpenSans-Light.ttf"); }
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/OpenSans-Bold.ttf"); }
+/******* CORES *******/
+/******* MIXINS *******/
+/******* GERAIS *******/
+html {
+  font-size: 10px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: 'OpenSans-Regular', sans-serif; }
+
+#servicos,
+#principal,
+footer {
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+
+a.a-link {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem; }
+  a.a-link:hover i {
+    transform: translate3d(0.8rem, 0, 0);
+    transition: .2s ease-in all;
+    -webkit-transition: .2s ease-in all;
+    -moz-transition: .2s ease-in all;
+    -o-transition: .2s ease-in all; }
+  a.a-link i {
+    position: relative;
+    font-size: 1.5rem;
+    margin-left: .5rem; }
+
+/******* DIV.IMG-FUNDO *******/
+.img-fundo {
+  height: 100vh;
+  background: url("../img/fitness-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center; }
+
+/******* NAVBAR *******/
+.navbar {
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.navbar-header a,
+.nav a {
+  color: #fff; }
+
+.nav > li > a {
+  margin-left: 2rem; }
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  color: #fd634e;
+  background: none;
+  transition: .2s ease-in all;
+  -webkit-transition: .2s ease-in all;
+  -moz-transition: .2s ease-in all;
+  -o-transition: .2s ease-in all; }
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    transition: .4s ease-in all;
+    -webkit-transition: .4s ease-in all;
+    -moz-transition: .4s ease-in all;
+    -o-transition: .4s ease-in all; }
+
+  .navbar-brand img {
+    width: 60%; } }
+.navbar-opacidade {
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  transition: .4s ease-in all;
+  -webkit-transition: .4s ease-in all;
+  -moz-transition: .4s ease-in all;
+  -o-transition: .4s ease-in all; }
+
+#btn-menu {
+  border: none; }
+  #btn-menu span {
+    background: #fff; }
+  #btn-menu:focus {
+    background: none; }
+  #btn-menu:hover span {
+    background: #fd634e; }
+
+/******* SECTION#CHAMADA *******/
+#chamada {
+  text-transform: uppercase; }
+
+.chamada-titulo {
+  font-size: 4rem;
+  margin-top: 80vh;
+  margin-bottom: 0; }
+  .chamada-titulo span {
+    color: #a2ca28; }
+
+.chamada-subtitulo {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-left: 20rem; }
+  .chamada-subtitulo span {
+    color: #fd634e; }
+
+/******* SECTION#SERVICOS *******/
+#servicos {
+  background: #a2ca28; }
+
+.servicos-item i.servicos-icone {
+  font-size: 5rem; }
+.servicos-item h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem; }
+.servicos-item p {
+  line-height: 1.5;
+  font-size: 1.5rem; }
+
+/******* MAIN#PRINCIPAL *******/
+.principal-texto {
+  height: 300px;
+  padding-top: 4rem;
+  height: 340px; }
+  .principal-texto p {
+    color: #656e74;
+    font-size: 1.4rem; }
+  .principal-texto h4 {
+    text-transform: uppercase;
+    font-family: 'OpenSans-Bold', sans-serif;
+    color: #fd634e;
+    font-size: 1.4rem; }
+  .principal-texto h3 {
+    text-transform: uppercase;
+    color: #a2ca28;
+    font-size: 3.3rem;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .principal-texto img {
+    margin: 2rem auto; }
+  .principal-texto a.a-link {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .principal-texto a.a-link,
+  .principal-texto i {
+    color: #a2ca28; }
+
+.principal-container {
+  box-shadow: 0px 0px 10px #e3e9ea;
+  -webkit-box-shadow: 0px 0px 10px #e3e9ea;
+  -moz-box-shadow: 0px 0px 10px #e3e9ea;
+  -o-box-shadow: 0px 0px 10px #e3e9ea; }
+  .principal-container:after, .principal-container:before {
+    content: '';
+    display: table;
+    clear: both; }
+
+@media only screen and (max-width: 992px) {
+  .principal-container {
+    max-width: 90%;
+    margin: 0 auto; } }
+.principal-img#img1 {
+  background: url("../img/fitness-training.jpg"); }
+
+.principal-img#img2 {
+  background: url("../img/fitness-connect.jpg"); }
+
+.principal-img#img3 {
+  background: url("../img/fitness-running.jpg"); }
+
+.principal-img#img4 {
+  background: url("../img/fitness-beach.jpg"); }
+
+.principal-img#img5 {
+  background: url("../img/fitness-fruit.jpg"); }
+
+.principal-img#img6 {
+  background: url("../img/fitness-fruits.jpg"); }
+
+.principal-info {
+  margin-top: 28rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem; }
+  .principal-info .principal-num {
+    color: #fd634e; }
+
+/******* SECTION#IDEIAS *******/
+#ideias {
+  background: url("../img/fitness-goal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 800px; }
+  #ideias .ideias-titulo {
+    font-size: 4.5rem;
+    padding-top: 300px; }
+  #ideias .ideias-sub-titulo {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    max-width: 40%;
+    margin: 0 auto;
+    line-height: 1.4; }
+
+/******* FOOTER *******/
+footer {
+  background: #0d1119; }
+  footer h4 {
+    font-size: 1.5rem;
+    font-family: 'OpenSans-Bold', sans-serif; }
+  footer p {
+    margin-top: 2rem;
+    color: #8297a7; }
+
+form {
+  margin-top: 1rem; }
+  form button {
+    background: #a2ca28; }
+  form button,
+  form .form-group input:last-child {
+    margin-right: .8rem; }
+  form .btn-success {
+    background: #a2ca28;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  form .btn-success:hover {
+    background: #81a319;
+    transition: .2s ease-in all;
+    -webkit-transition: .2s ease-in all;
+    -moz-transition: .2s ease-in all;
+    -o-transition: .2s ease-in all; }
+  form .btn-success:hover i {
+    transform: translate3d(0.8rem, 0, 0);
+    transition: .2s ease-in all;
+    -webkit-transition: .2s ease-in all;
+    -moz-transition: .2s ease-in all;
+    -o-transition: .2s ease-in all; }
+
+.with-errors.help-block {
+  font-size: 1rem;
+  position: absolute;
+  color: #fd634e; }
+
+.redes-sociais i.fa-facebook {
+  background: #2e3192; }
+
+.redes-sociais i.fa-twitter {
+  background: #00aeef; }
+
+.redes-sociais i.fa-youtube {
+  background: #ed3123; }
+
+.redes-sociais i.fa-linkedin {
+  background: #171a8f; }
+
+.redes-sociais {
+  margin-top: 2rem; }
+  .redes-sociais a i {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: .9rem;
+    margin-right: .5rem; }
+
+@media only screen and (max-width: 768px) {
+  .footer-text-center {
+    margin-bottom: 3rem;
+    text-align: center; }
+
+  button[type="submit"] {
+    width: 100%; } }
+/******* BOTAO VOLTAR TOPO *******/
+a[href="#top"] {
+  color: #fd634e;
+  padding: 1rem;
+  right: 1rem;
+  position: fixed;
+  top: 90%;
+  display: none;
+  font-size: 2.5rem;
+  text-decoration: none;
+  z-index: 10; }
+
+a[href="#top"]:hover {
+  -webkit-transform: translateY(-1.5rem);
+  transform: translateY(-1.5rem);
+  transition: .2s ease-in all;
+  -webkit-transition: .2s ease-in all;
+  -moz-transition: .2s ease-in all;
+  -o-transition: .2s ease-in all; }
+
+.diminuir-logo {
+  width: 60%;
+  transition: .4s ease-in all;
+  -webkit-transition: .4s ease-in all;
+  -moz-transition: .4s ease-in all;
+  -o-transition: .4s ease-in all; }
+
+/*# sourceMappingURL=estilo.css.map */
